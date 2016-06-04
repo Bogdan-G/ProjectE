@@ -652,7 +652,7 @@ public class ObjHandler
 	public static void registerPhiloStoneSmelting()
 	{
 
-		for (Entry<ItemStack, ItemStack> entry : (((HashMap<ItemStack, ItemStack>) FurnaceRecipes.smelting().getSmeltingList()).entrySet()))
+		for (Entry<ItemStack, ItemStack> entry : (((java.util.concurrent.ConcurrentHashMap<ItemStack, ItemStack>) FurnaceRecipes.smelting().getSmeltingList()).entrySet()))
 		{
 			if (entry.getKey() == null || entry.getValue() == null)
 			{
